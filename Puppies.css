@@ -1,12 +1,81 @@
+@font-face {
+		font-family: Singapore;
+		src: url(Syncopate-Regular.ttf);
+	}
+@font-face {
+		font-family: Titillium;
+		src: url(TitilliumWeb-SemiBold.ttf);
+	}
+body {
+	font-family: Titillium, sans-serif;
+}
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #B824D5;
+  background: linear-gradient(45deg, #5555EE, #EEEE55);
   border-radius: 0.3rem;
+  font-family: Singapore, sans-serif;
 }
 
 #footer {
-	background-color: #B824D5;
+  	background: linear-gradient(45deg, #EEEE55, #5555EE);
 	color: white;
 	width: 100%;
 }
+
+ .headerPawTop {
+ 	float: left; 
+	width: 100px;
+	height: 100px;
+ }
+ 
+ .headerPawBottom {
+	float: right;
+	width: 100px;
+	height: 100px;
+ }
+ 
+ .footerPawTop {
+	display:none;
+ }
+ 
+ .footerPawBottom {
+	display: none;
+ }
+ @media (max-width: 450px)  {
+ 	h1 {
+		font-size: x-large;
+	}
+	h2 {
+		font-size: medium;
+	}
+ 	.headerPawTop {
+		display:none;
+	}
+ 	.headerPawBottom {
+		display:none;
+	}
+	.footerPawTop {
+ 	float: left;
+	width: 50px; 
+	height: 50px;
+	display:block;
+ 	}
+ 	.footerPawBottom {
+ 	float: right;
+	width: 50px;
+	height: 50px;
+	display:block;
+	}
+	.navbar-header {
+  	background: linear-gradient(45deg, #5555EE, #EEEE55);
+	}
+	.logoText {
+	color: black;
+	}
+	.introductionBox {
+	padding: 10px;
+	margin: 2px;
+	text-align: center;
+	}
+ }
